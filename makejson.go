@@ -29,7 +29,8 @@
 		  }
 	  
       m := make(map[string]string) 
-	  m[lines[0]] = lines[1]
+	  m["name"] = lines[0]
+	  m["address"] = lines[1]
 	  fmt.Println("Map: ",m)
 	  fmt.Print("JSON: ")
 	  jsonStr, err := json.Marshal(m)
